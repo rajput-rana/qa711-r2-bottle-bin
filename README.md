@@ -22,4 +22,4 @@ npm run dev
 QA 711 round 2: save 1 (provision)
 QA 711 round 2: save 2 (after pull)
 QA 711 round 2: pulled while the question waited (HITL-01)
-QA 711 R2: BUILD-04 retest via pull build (web cluster has #1003)
+QA 711 R2: BUILD-04 retest via pull build (web cluster has #1003) x
