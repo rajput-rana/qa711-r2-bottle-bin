@@ -366,7 +366,7 @@ function Footer() {
           </span>
           <span className="font-display font-semibold text-foreground">Terra Vessel</span>
         </div>
-        <p>© {new Date().getFullYear()} Terra Vessel. Drink responsibly, sustainably.</p>
+        <p>© {new Date().getFullYear()} Terra Vessel. Drink responsibly, sustainably. · QA 711 R2 branch edit</p>
         <div className="flex items-center gap-4">
           <a href="#top" aria-label="Instagram" className="transition-colors hover:text-foreground">
             <Instagram className="size-4" />
