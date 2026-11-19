@@ -103,9 +103,7 @@ function Nav() {
           <span className="flex size-8 items-center justify-center rounded-full bg-primary text-primary-foreground">
             <Droplets className="size-4" />
           </span>
-          <span className="font-display text-lg font-semibold tracking-tight">
-            Vesso Terra
-          </span>
+          <span className="font-display text-lg font-semibold tracking-tight">Vesso Terra</span>
         </a>
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           <a href="#collection" className="transition-colors hover:text-foreground">
@@ -166,10 +164,11 @@ function Hero() {
             of oceans
           </span>
           <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-            Water, carried (R2) <em className="not-italic text-primary">brilliantly.</em>
+            Fill it once. <em className="not-italic text-primary">Carry it forever.</em>
           </h1>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
-            Terra Vessel bottles keep cold drinks cold for 30 hours and hot drinks hot for 13 — in recycled steel finishes that look as good as they perform.
+            Terra Vessel bottles keep cold drinks cold for 30 hours and hot drinks hot for 13 — in
+            recycled steel finishes that look as good as they perform.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
@@ -299,7 +298,7 @@ function Features() {
             Why Terra Vessel
           </p>
           <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight text-foreground lg:text-5xl">
-            Built for a decade of refills
+            Synced from GitHub, built for refills
           </h2>
         </div>
         <div className="mt-14 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
@@ -353,6 +352,14 @@ function Reviews() {
         </div>
       </div>
     </section>
+  );
+}
+
+function BranchBadge() {
+  return (
+    <div className="fixed bottom-4 left-4 z-50 rounded-full bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground shadow-lg">
+      Branch: leadconnector-sync
+    </div>
   );
 }
 
@@ -416,6 +423,7 @@ function Index() {
       <Features />
       <Reviews />
       <Footer />
+      <BranchBadge />
     </div>
   );
 }
