@@ -51,6 +51,14 @@ const products = [
     img: BOTTLE_SAND,
     tag: null,
   },
+  {
+    id: "tide",
+    name: "The Tide",
+    desc: "Limited ocean-blue run. 10% of every sale funds beach cleanups.",
+    price: 46,
+    img: BOTTLE_SAGE,
+    tag: "QA branch only",
+  },
 ];
 
 const features = [
@@ -166,10 +174,11 @@ function Hero() {
             of oceans
           </span>
           <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-            Water, carried (R2) <em className="not-italic text-primary">brilliantly.</em>
+            Water, carried <em className="not-italic text-primary">anywhere.</em>
           </h1>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
-            Terra Vessel bottles keep cold drinks cold for 30 hours and hot drinks hot for 13 — in recycled steel finishes that look as good as they perform.
+            Terra Vessel bottles keep cold drinks cold for 30 hours and hot drinks hot for 13 — in
+            recycled steel finishes that look as good as they perform.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
@@ -272,7 +281,7 @@ function Collection() {
               The collection
             </p>
             <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight text-foreground lg:text-5xl">
-              Three bottles. Zero compromise.
+              Four bottles. Zero compromise.
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
@@ -280,7 +289,7 @@ function Collection() {
             lifetime promise.
           </p>
         </div>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {products.map((p) => (
             <ProductCard key={p.id} product={p} />
           ))}
@@ -356,6 +365,14 @@ function Reviews() {
   );
 }
 
+function BranchBadge() {
+  return (
+    <div className="fixed bottom-4 left-4 z-50 rounded-full bg-accent px-4 py-2 text-xs font-semibold text-accent-foreground shadow-lg">
+      Branch: qa711-r2-changes
+    </div>
+  );
+}
+
 function Footer() {
   return (
     <footer className="border-t border-border bg-card">
@@ -366,7 +383,10 @@ function Footer() {
           </span>
           <span className="font-display font-semibold text-foreground">Terra Vessel</span>
         </div>
-        <p>© {new Date().getFullYear()} Terra Vessel. Drink responsibly, sustainably. · QA 711 R2 branch edit</p>
+        <p>
+          © {new Date().getFullYear()} Terra Vessel. Drink responsibly, sustainably. · QA 711 R2
+          branch edit
+        </p>
         <div className="flex items-center gap-4">
           <a href="#top" aria-label="Instagram" className="transition-colors hover:text-foreground">
             <Instagram className="size-4" />
@@ -416,6 +436,7 @@ function Index() {
       <Features />
       <Reviews />
       <Footer />
+      <BranchBadge />
     </div>
   );
 }
