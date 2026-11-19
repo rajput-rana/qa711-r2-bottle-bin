@@ -104,7 +104,7 @@ function Nav() {
             <Droplets className="size-4" />
           </span>
           <span className="font-display text-lg font-semibold tracking-tight">
-            Terra&nbsp;Vessel
+            Vesso Terra
           </span>
         </a>
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
