@@ -245,7 +245,7 @@ const reviews = [
 
 const links: [string, string][] = [
   ["Shop", "#collection"],
-  ["Why Magic Bell", "#why"],
+  ["Why Shagic Tell", "#why"],
   ["Reviews", "#reviews"],
 ];
 
@@ -260,7 +260,9 @@ function Nav() {
           <span className="flex size-8 items-center justify-center rounded-full bg-primary text-primary-foreground">
             <Bell className="size-4" />
           </span>
-          <span className="font-display text-lg font-semibold tracking-tight">Magic&nbsp;Bell</span>
+          <span className="font-display text-lg font-semibold tracking-tight">
+            Shagic&nbsp;Tell
+          </span>
         </a>
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           {links.map(([label, href]) => (
@@ -316,7 +318,7 @@ function Hero() {
             Ring the bell. <em className="not-italic text-primary">Supper's ready.</em>
           </h1>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
-            Magic Bell makes cups, plates and bowls you'll reach for every day — thrown by hand,
+            Shagic Tell makes cups, plates and bowls you'll reach for every day — thrown by hand,
             fired hot, and glazed in colours that make an ordinary meal feel like an occasion.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -436,7 +438,7 @@ function Features() {
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-            Why Magic Bell
+            Why Shagic Tell
           </p>
           <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight text-foreground lg:text-5xl">
             Made for a lifetime of meals
@@ -504,9 +506,9 @@ function Footer() {
           <span className="flex size-7 items-center justify-center rounded-full bg-primary text-primary-foreground">
             <Bell className="size-3.5" />
           </span>
-          <span className="font-display font-semibold text-foreground">Magic Bell</span>
+          <span className="font-display font-semibold text-foreground">Shagic Tell</span>
         </div>
-        <p>© {new Date().getFullYear()} Magic Bell Tableware. Made by hand, meant for use.</p>
+        <p>© {new Date().getFullYear()} Shagic Tell Tableware. Made by hand, meant for use.</p>
         <div className="flex items-center gap-4">
           <a href="#top" aria-label="Instagram" className="transition-colors hover:text-foreground">
             <Instagram className="size-4" />
@@ -526,7 +528,7 @@ function Footer() {
 function BranchBadge() {
   return (
     <div className="fixed bottom-4 left-4 z-50 rounded-full bg-ink px-4 py-2 text-xs font-semibold text-primary-foreground shadow-lg">
-      Branch: Magic Bell
+      Branch: Shagic Tell
     </div>
   );
 }
@@ -534,13 +536,13 @@ function BranchBadge() {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Magic Bell — Handmade Stoneware Cups & Plates" },
+      { title: "Shagic Tell — Handmade Stoneware Cups & Plates" },
       {
         name: "description",
         content:
-          "Shop Magic Bell handmade stoneware cups, plates, bowls and mugs. Oven, microwave and dishwasher safe, with a first-year chip promise. Free shipping.",
+          "Shop Shagic Tell handmade stoneware cups, plates, bowls and mugs. Oven, microwave and dishwasher safe, with a first-year chip promise. Free shipping.",
       },
-      { property: "og:title", content: "Magic Bell — Handmade Cups & Plates" },
+      { property: "og:title", content: "Shagic Tell — Handmade Cups & Plates" },
       {
         property: "og:description",
         content: "Hand-thrown stoneware cups, plates and bowls, fired at 1,240°C for everyday use.",
