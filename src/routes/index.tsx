@@ -150,7 +150,7 @@ function Hero() {
       <div className="pointer-events-none absolute -left-40 bottom-0 size-[28rem] rounded-full bg-heat/10 blur-3xl" />
       <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-12 sm:px-6 lg:grid-cols-12 lg:pb-24 lg:pt-20">
         <div className="lg:col-span-7">
-          <Label>Insulated steel bottles · Est. 2019</Label>
+          <Label>Winter drop · Free engraving this week</Label>
           <h1 className="mt-6 font-display font-wide text-[13vw] font-black uppercase leading-[0.86] tracking-tighter sm:text-7xl lg:text-[7.5rem]">
             <span className="text-ice">Cold</span> stays.
             <br />
@@ -216,6 +216,7 @@ function Hero() {
 
 function Ticker() {
   const items = [
+    "Free engraving this week",
     "Free shipping on every order",
     "Lifetime warranty",
     "1 bottle = 12 plastic bottles avoided",
@@ -519,6 +520,14 @@ function FieldNotes() {
   );
 }
 
+function BranchBadge() {
+  return (
+    <div className="fixed bottom-4 left-4 z-50 bg-ice px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-widest text-primary-foreground shadow-lg">
+      Branch: staging
+    </div>
+  );
+}
+
 function Footer() {
   const [email, setEmail] = useState("");
   const [done, setDone] = useState(false);
@@ -614,6 +623,7 @@ function Index() {
       <Impact />
       <FieldNotes />
       <Footer />
+      <BranchBadge />
     </div>
   );
 }
