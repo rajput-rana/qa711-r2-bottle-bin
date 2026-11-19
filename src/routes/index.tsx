@@ -526,7 +526,7 @@ function Footer() {
 function BranchBadge() {
   return (
     <div className="fixed bottom-4 left-4 z-50 rounded-full bg-ink px-4 py-2 text-xs font-semibold text-primary-foreground shadow-lg">
-      Branch: magic-bell
+      Branch: Magic Bell
     </div>
   );
 }
