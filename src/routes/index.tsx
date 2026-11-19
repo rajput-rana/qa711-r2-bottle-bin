@@ -115,7 +115,7 @@ function Nav() {
             Why Terra
           </a>
           <a href="#reviews" className="transition-colors hover:text-foreground">
-            Reviews
+            Review
           </a>
         </nav>
         <div className="flex items-center gap-3">
